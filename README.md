@@ -11,3 +11,9 @@ npm run dev
 ```bash
 npm run storybook
 ```
+
+## Test 실행하기 - Cypress
+
+```bash
+npm run cypress:open
+```
