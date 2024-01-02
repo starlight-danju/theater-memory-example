@@ -7,10 +7,11 @@ import { motion as m } from "framer-motion";
 import SocialProofs from "../modules/SocialProofs";
 import Link from "next/link";
 import TanstackProvider from "../TanstackProvider";
+import { heroPadding, sectionPadding } from "@/style";
 
 const Hero = () => {
     return (
-        <div className="pb-[160px] md:pb-[320px]">
+        <div className={`${heroPadding}`}>
             <m.div
                 className="flex gap-10 flex-col mb-[120px]"
                 initial={{ opacity: 0, y: 50 }}

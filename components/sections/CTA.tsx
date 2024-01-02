@@ -5,6 +5,7 @@ import Text from "../atoms/Text";
 import POSTER from "@/public/poster-min.jpg";
 import Button from "../atoms/Button";
 import { useQuery } from "@tanstack/react-query";
+import { sectionPadding } from "@/style";
 
 const CTA = () => {
     const { data, isLoading, error } = useQuery({
@@ -19,7 +20,7 @@ const CTA = () => {
     if (error) return <div>Error: {error.message}</div>;
     else
         return (
-            <div className="py-[160px] md:py-[320px]">
+            <div className={`${sectionPadding}`}>
                 <Text
                     type="heading"
                     language="ko"
@@ -27,7 +28,7 @@ const CTA = () => {
                 >
                     현재 중비 중인 공연
                 </Text>
-                <div className="flex flex-col gap-2 sm:mb-10">
+                <div className="flex flex-col gap-2 mb-4 sm:mb-10">
                     <Image
                         src={POSTER}
                         alt="공연 준비 중 포스터"
@@ -51,7 +52,9 @@ const CTA = () => {
                     {data?.showDescription}
                 </Text>
                 <div className="flex flex-col gap-4 justify-center items-center sm:flex-row">
-                    <Button className="sm:w-[456px]">공연 에매하기</Button>
+                    <Button className="w-[194px] sm:w-[456px]">
+                        공연 에매하기
+                    </Button>
                     <Button variant="secondary" className="sm:w-[456px]">
                         배우가 되고 싶으신가요?
                     </Button>
