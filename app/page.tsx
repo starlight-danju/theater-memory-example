@@ -1,3 +1,4 @@
+import TanstackProvider from "@/components/TanstackProvider";
 import CTA from "@/components/sections/CTA";
 import ContradictA from "@/components/sections/ContradictA";
 import ContradictB from "@/components/sections/ContradictB";
@@ -9,7 +10,9 @@ export default function Home() {
             <Hero />
             <ContradictA />
             <ContradictB />
-            <CTA />
+            <TanstackProvider>
+                <CTA />
+            </TanstackProvider>
         </main>
     );
 }
