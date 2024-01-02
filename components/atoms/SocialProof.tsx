@@ -16,7 +16,7 @@ const SocialProof: React.FC<socialProofProops> = ({
     return (
         <div
             className={cn(
-                "max-w-[456px] h-20 flex flex-col gap-1 justify-center items-center p-px bg-gradient-to-b rounded-2xl from-white/50 to-white/10 hover:from-white hover:to-white active:bg-primary_500",
+                "max-w-[764px] w-full h-20 flex flex-col gap-1 justify-center items-center p-px bg-gradient-to-b rounded-2xl from-white/50 to-white/10 hover:from-white hover:to-white active:bg-primary_500",
                 className
             )}
         >

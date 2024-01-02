@@ -1,14 +1,15 @@
-import Evidence from "@/components/atoms/Evidence";
-import SocialProof from "@/components/atoms/SocialProof";
+import CTA from "@/components/sections/CTA";
+import ContradictA from "@/components/sections/ContradictA";
+import ContradictB from "@/components/sections/ContradictB";
+import Hero from "@/components/sections/Hero";
 
 export default function Home() {
     return (
-        <div>
-            <SocialProof title="여태까지 올린 극" description="3개 작품" />
-            <Evidence
-                title="정당한 음원 사용"
-                description="기억 극단은 합법적으로 음악을 사용합니다"
-            />
-        </div>
+        <main className="px-4 sm:px-32 md:px-64">
+            <Hero />
+            <ContradictA />
+            <ContradictB />
+            <CTA />
+        </main>
     );
 }
