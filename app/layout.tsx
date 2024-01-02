@@ -15,8 +15,10 @@ export default function RootLayout({
     children: React.ReactNode;
 }) {
     return (
-        <html lang="ko">
-            <body className={inter.className}>{children}</body>
+        <html lang="ko" className="w-full h-full">
+            <body className="w-full h-full bg-gradient-to-b from-[#020202] to-[#0D0D0D]">
+                {children}
+            </body>
         </html>
     );
 }

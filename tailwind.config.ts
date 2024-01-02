@@ -1,20 +1,57 @@
-import type { Config } from 'tailwindcss'
+import type { Config } from "tailwindcss";
 
 const config: Config = {
-  content: [
-    './pages/**/*.{js,ts,jsx,tsx,mdx}',
-    './components/**/*.{js,ts,jsx,tsx,mdx}',
-    './app/**/*.{js,ts,jsx,tsx,mdx}',
-  ],
-  theme: {
-    extend: {
-      backgroundImage: {
-        'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
-        'gradient-conic':
-          'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
-      },
+    content: [
+        "./pages/**/*.{js,ts,jsx,tsx,mdx}",
+        "./components/**/*.{js,ts,jsx,tsx,mdx}",
+        "./app/**/*.{js,ts,jsx,tsx,mdx}",
+    ],
+    theme: {
+        screens: {
+            sm: "780px",
+            md: "1420px",
+        },
+        extend: {
+            colors: {
+                neutral_100: "#ffffff",
+                neutral_200: "#fdfdfd",
+                neutral_300: "#f5f5f5",
+                neutral_400: "#f0f0f0",
+                neutral_500: "#dbdbdb",
+                neutral_600: "#c3c3c3",
+                neutral_700: "#929292",
+                neutral_800: "#626262",
+                neutral_900: "#4e4e4e",
+                neutral_1000: "#313131",
+                neutral_1100: "#2a2a2a",
+                neutral_1200: "#202020",
+                neutral_1300: "#0d0d0d",
+                primary_50: "#fcf0ea",
+                primary_100: "#f5d1bd",
+                primary_200: "#f0bb9d",
+                primary_300: "#e99d70",
+                primary_400: "#e58955",
+                primary_500: "#de6c2a",
+                primary_600: "#ca6226",
+                primary_700: "#9e4d1e",
+                primary_800: "#7a3b17",
+                primary_900: "#5d2d12",
+                secondary_50: "#eafefe",
+                secondary_100: "#befbfb",
+                secondary_200: "#9ff9f9",
+                secondary_300: "#73f6f6",
+                secondary_400: "#58f5f4",
+                secondary_500: "#2ef2f1",
+                secondary_600: "#2adcdb",
+                secondary_700: "#21acab",
+                secondary_800: "#198585",
+                secondary_900: "#136665",
+                warning: "#f5a524",
+                fail: "#f31260",
+                success: "#18c964",
+            },
+        },
     },
-  },
-  plugins: [],
-}
-export default config
+    plugins: [],
+};
+export default config;
