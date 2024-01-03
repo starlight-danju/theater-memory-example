@@ -23,7 +23,7 @@ const Headline = () => {
                     type="heading"
                     language="ko"
                     variant="default"
-                    className="text-white mt-60 text-3xl tracking-tighter leading-9 font-bold sm:text-[3rem] sm:leading-tight "
+                    className="main-text text-white mt-60 text-3xl tracking-tighter leading-9 font-bold sm:text-[3rem] sm:leading-tight "
                 >
                     {data?.headline}
                 </Text>
