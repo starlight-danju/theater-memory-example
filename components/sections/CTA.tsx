@@ -2,10 +2,10 @@
 
 import Image from "next/image";
 import Text from "../atoms/Text";
-import POSTER from "@/public/poster-min.jpg";
+import POSTER from "../../public/poster-min.jpg";
 import Button from "../atoms/Button";
 import { useQuery } from "@tanstack/react-query";
-import { sectionPadding } from "@/style";
+import { sectionPadding } from "../../style";
 
 const CTA = () => {
     const { data, isLoading, error } = useQuery({

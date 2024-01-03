@@ -1,0 +1,64 @@
+import { Meta } from "@storybook/blocks";
+
+<Meta title="기억 극단 포트폴리오용 웹사이트 제작 예시" />"
+
+# Projects Docs
+
+---
+
+-   🖊️ **author**: 임재호 [이메일, danju@starlight-sangdan.com]()
+-   ️🗓️ **update**: 2023-12-31
+
+> 문서 작성 예시입니다. Nextjs는 리액트 기반의 프로젝트입니다. 따라서 컴포넌트 주도 개발을 하게 됩니다. 컴포넌트 주도 개발 프로젝트를 문서화 시키기 적합한 스토리북을 사용하겠습니다.
+
+> 예시에는 nextjs 프로젝트에서 만든 컴포넌트에서 가져오기 쉬운 두 가지만 간단히 표현했습니다. 사실 스토리북을 사용할 생각이라면 독립적인 컴포넌트를 먼저 작성하시기 바랍니다. 다른 모듈을 Import 하는 부분이 stories 폴더
+> 안에서 경로가 지정되어야 합니다.
+
+## Project Description
+
+<table>
+    <th>No</th>
+    <th>Directory</th>
+    <th>Description</th>
+    <tr>
+        <td>1</td>
+        <td>/app</td>
+        <td>화면(페이지), api(라우터)가 들어가 있는 디렉토리</td>
+    </tr>
+    <tr>
+        <td>2</td>
+        <td>/components</td>
+        <td>어플리케이션 전역에서 쓰이는 공통 컴포넌트가 모여있는 디렉토리</td>
+    </tr>
+    <tr>
+        <td>3</td>
+        <td>/cypress</td>
+        <td>E2E, Unit 테스트 모음 디렉토리</td>
+    </tr>
+    <tr>
+        <td>4</td>
+        <td>/lib</td>
+        <td>각종 유틸리티 함수 모음 디렉토리</td>
+    </tr>
+    <tr>
+        <td>5</td>
+        <td>/stories</td>
+        <td>
+            컴포넌트 주도 라이브러리 storybook 디렉토리, 프로젝트 문서화를
+            위해서 쓰인다.
+        </td>
+    </tr>
+    <tr>
+        <td>6</td>
+        <td>/style</td>
+        <td>공통 스타일 문자열 또는 variants 오브젝트 모음 디렉토리</td>
+    </tr>
+</table>
+
+## Develop Cycle
+
+-   기획
+-   개발
+-   코드 테스트 및 리팩토링
+-   CI & CD
+-   배포

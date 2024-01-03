@@ -1,4 +1,4 @@
-import { cn } from "@/lib/utils";
+import { cn } from "../lib/utils";
 import { VariantProps, cva } from "class-variance-authority";
 import { Inter, Noto_Sans_KR } from "next/font/google";
 import { forwardRef } from "react";
@@ -46,7 +46,7 @@ const TextVariants = cva("", {
     },
 });
 
-export interface TextProps
+interface TextProps
     extends React.HTMLAttributes<HTMLParagraphElement | HTMLHeadingElement>,
         VariantProps<typeof TextVariants> {
     type: "heading" | "paragraph";
